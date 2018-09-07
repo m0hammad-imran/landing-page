@@ -1,0 +1,814 @@
+
+body{
+
+/*font-family: 'Kaushan Script', cursive;*/
+font-family: 'Montserrat', sans-serif;
+
+}
+.center{
+	display: block;
+	margin: 0 auto;
+}
+
+.text-center{
+	text-align: center;
+}
+
+/*
+==================
+header section css
+==================
+
+*/
+
+.navbar-dark .navbar-brand {
+font-family: 'Kaushan Script', cursive;
+    font-size: 25px;
+    padding: 5px 0;
+    color: #c59a6d;
+    letter-spacing: 1px;
+
+
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: rgb(255, 255, 255);
+}
+
+.bg-dark {
+  background-color: #5252529e !important;
+}
+
+.navbar-dark .navbar-brand:focus, .navbar-dark .navbar-brand:hover {
+    color: #a1774b;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: #a1774b;
+}
+
+#mainNav .navbar-nav .nav-item .nav-link {
+padding: 0 30px;	
+
+}
+
+
+.header-bg{
+
+background: url(../vendor/img/services.jpg) no-repeat;
+background-attachment: fixed;
+background-size: cover;
+background-position: center;
+
+
+}
+
+.btn-hover.text-center {
+    padding-bottom: 8%;
+}
+
+ .btn-hover a{
+
+    position: absolute;
+    text-decoration: none;
+    text-transform: uppercase;
+    right: 36%;
+    font-size: 25px;
+    color: #fff;
+    border: 4px solid #c59a6d;
+    padding: 17px 25px;
+    box-sizing: border-box;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+
+.btn-hover a:before{
+
+    content: attr(data-title);
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #262626;
+    color: #fff;
+    padding: 17px 25px;
+    box-sizing: border-box;
+    transition: 0.3s;
+
+}
+
+
+.btn-hover a:after{
+
+    content: attr(data-title);
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #c59a6d;
+    color: #262626;
+    padding: 17px 25px;
+    box-sizing: border-box;
+    transition: 0.3s;
+
+}
+
+
+.btn-hover a:hover:after{
+    top: -100%;
+}
+
+
+.btn-hover a:hover:before{
+    top: 0;
+}
+
+
+.header-text h4{
+
+	text-transform: uppercase;
+    color: #fff;
+    font-family: 'Kaushan Script', cursive;
+    font-size: 40px;
+    letter-spacing: 2px;
+    padding-bottom: 15px;
+
+}
+
+
+.header-text h1{
+    color: #fff;
+    font-size: 75px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding-bottom: 40px;
+}
+
+
+/*
+=====================
+service text
+=================
+*/
+
+
+section.service {
+    padding-top: 6%;
+}
+
+.service-text h2{
+    text-transform: uppercase;
+
+    font-family: 'Kaushan Script', cursive;
+    font-size: 40px;
+    letter-spacing: 2px;
+}
+
+.service-text p{
+    margin-bottom: 8%;
+}
+
+
+.service-icon ul{
+    
+    left: 40%;
+}
+
+.service-icon ul li{
+    position: relative;
+    list-style: none;
+    background: #fff;
+    width: 120px;
+    height: 120px;
+    border: 3px solid #c59a6d;
+    box-sizing: border-box;
+    border-radius: 50%;
+    transition: 0.5s;
+    overflow: hidden;
+    display: block;
+    margin: 0 23%;
+}
+
+
+.service-icon ul li:hover{
+   background: #c59a6d; 
+}
+
+.service-icon ul li .fa{
+    position: absolute;
+        top: 30%;
+    left: 30%;
+    font-size: 50px;
+    color: #c59a6d;
+    transition: 0.5s;
+}
+
+.service-icon ul li .fa:nth-child(1){
+
+   left: -50%;
+   opacity: 1;
+}
+
+.service-icon ul li:hover .fa:nth-child(1){
+
+   left: 30%;
+   opacity: 1;
+   color: #fff;
+}
+
+.service-icon ul li:hover .fa:nth-child(2){
+
+   left: 20%;
+   opacity: 0;
+}
+
+.service-icon h4{
+font-weight: bold;
+
+}
+
+.service-icon p {
+    color: #6c757d;
+    font-weight: 500;
+}
+
+
+/*
+====================
+portfoli-text
+=====================
+*/
+
+section.portfolio {
+    padding-top: 0;
+    background-color: #f7f7f7;
+}
+
+
+.portfolio-text h2{
+     text-transform: uppercase;
+
+    font-family: 'Kaushan Script', cursive;
+    font-size: 40px;
+    letter-spacing: 2px; 
+    padding-top: 8%; 
+}
+
+.portfolio-text p{
+    margin-bottom: 5%;
+    font-weight: 500px;
+    color: #6c757d;
+}
+
+
+
+
+
+
+.portfolio-img{
+    background-color: #fff;
+  
+   transition: all ease .5s;
+}
+
+.portfolio-img:hover{
+    
+   box-shadow: 0px 4px 5px 5px rgba(0, 0, 0, 0.09);
+   cursor: pointer;
+}
+
+
+
+.portfolio-img h3{
+   padding-top: 20px;
+    margin-bottom: 0;
+    font-weight: bold;
+}
+
+.portfolio-img p{
+    padding-bottom: 20px;
+    font-weight: 500px;
+    color: #6c757d;
+}
+
+
+/*
+================
+about section css
+==================
+*/
+
+section.about {
+    padding-top: 0;
+}
+
+.about-text h2{
+
+       text-transform: uppercase;
+
+    font-family: 'Kaushan Script', cursive;
+    font-size: 40px;
+    letter-spacing: 2px; 
+    padding-top: 8%;
+
+}
+
+.about-details h1{
+    text-align: right;
+}
+
+.about-details h4{
+    text-align: right;
+}
+
+.about-details p{
+    text-align: right;
+    padding-left: 35%;
+}
+
+.about-text h2{
+    padding-top: 10%;
+}
+
+.about-text p{
+    padding-bottom: 5%;
+}
+
+
+.about-img img {
+ background-color: #c59a6d;
+    border-radius: 50%;
+    width: 170px;
+    height: 170px;
+    padding: 5px;
+
+}
+
+.about-img-2 img{
+    float: right;
+    background-color: #c59a6d;
+    border-radius: 50%;
+    width: 170px;
+    height: 170px;
+    padding: 5px;
+    position: relative;
+}
+
+
+
+.img-part{
+    padding-bottom: 10%;
+}
+
+.img-part-3{
+    padding-bottom: 10%;
+}
+
+
+/*
+======================
+team text
+======================
+
+*/
+
+section.team {
+    padding-top: 0;
+    background-color: #f7f7f7;
+}
+
+.team-text h2{
+
+    text-transform: uppercase;
+
+    font-family: 'Kaushan Script', cursive;
+    font-size: 40px;
+    letter-spacing: 2px; 
+    padding-top: 8%;
+  
+}
+
+
+.team-text p{
+    padding-bottom: 5%;
+}
+
+
+.team-img img{
+        padding: 7px;
+    background-color: #c59a6d;
+    border-radius: 50%;
+    transition: all ease 1.5s;
+    display: block;
+    margin: 0 auto;
+}
+
+.team-img img:hover{
+    transform: rotate(10deg);
+}
+
+.team-img-text h3{
+    padding-top: 6%;
+    font-weight: bold;
+}
+
+.team-img-text p{
+    color: #6c757d;
+    font-weight: 500;
+}
+
+.team-icon ul{
+    display: flex;
+
+}
+
+.team-icon ul li{
+    position: relative;
+    list-style: none;
+    width: 50px;
+    height: 50px;
+    background: #fff;
+    margin: 0 20px;
+    border: 2px solid #c59a6d;;
+    border-radius:50px;
+    transition: 0.5s;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.team-icon ul li:hover{
+    background: #c59a6d;;
+    cursor: pointer;
+}
+.team-icon ul li .fa{
+     position: absolute;
+    top: 26%;
+    left: 34%;
+    font-size: 20px;
+    transition: 0.5s;
+}
+
+.team-icon ul li .fa:nth-child(1){
+    left: -34%;
+    opacity: 0;
+}
+
+.team-icon ul li:hover .fa:nth-child(1){
+    left: 34%;
+    opacity: 1;
+    color: #fff;
+}
+
+.team-icon ul li:hover .fa:nth-child(2){
+    left: 150%;
+    opacity: 0;
+}
+
+.team-last-text p{
+    color: #6c757d;
+    font-weight: 600;
+    padding-top: 3%;
+}
+
+/*
+==================
+sponser section css
+=====================
+*/
+
+section.sponser {
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+/*
+=================
+contact-us
+====================
+*/
+
+section.contact {
+    padding-top: 0;
+    background: url(../vendor/img/twitts-bg.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+
+.contact-text h2{
+    color: #fff;
+     text-transform: uppercase;
+
+    font-family: 'Kaushan Script', cursive;
+    font-size: 40px;
+    letter-spacing: 2px; 
+    padding-top: 8%;
+
+}
+
+.contact-text p{
+    font-style: italic;
+    color: #fff;
+    padding-bottom: 5%;
+
+}
+
+
+.contact-msg textarea {
+    height: 200px;
+    font-weight: bold;
+
+}
+
+.contact-form input{
+       padding-bottom: 23px;
+       font-weight: bold;
+
+}
+
+.send-msg.{
+    padding-bottom: 8%;
+    padding-top: 2%;
+}
+
+ .send-msg a{
+
+    position: absolute;
+    text-decoration: none;
+    text-transform: uppercase;
+    right: 40%;
+    font-size: 25px;
+    color: #fff;
+    border: 4px solid #c59a6d;
+    padding: 17px 25px;
+    box-sizing: border-box;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+
+.send-msg a:before{
+
+    content: attr(data-title);
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #262626;
+    color: #fff;
+    padding: 17px 25px;
+    box-sizing: border-box;
+    transition: 0.3s;
+
+}
+
+
+.send-msg a:after{
+
+    content: attr(data-title);
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #c59a6d;
+    color: #262626;
+    padding: 17px 25px;
+    box-sizing: border-box;
+    transition: 0.3s;
+
+}
+
+
+.send-msg a:hover:after{
+    top: -100%;
+}
+
+
+.send-msg a:hover:before{
+    top: 0;
+}
+
+/*
+
+========================
+footer
+====================
+*/
+
+footer{
+    padding-top: 3%;
+    padding-bottom: 2%;
+}
+
+.policy a{
+    color: #000;
+}
+
+
+/*
+
+================
+media query
+==============
+*/
+
+/*for mobile*/
+
+@media screen and (max-width:576px){
+
+.header-text h1 {
+    
+    font-size: 34px;
+}
+
+
+.header-text h4 {
+ 
+    font-size: 23px;
+}
+
+.btn-hover a {
+  
+    right: 21%;
+    font-size: 15px;
+    
+    padding: 28px 23px;
+   
+}
+
+.service-icon ul li {
+   
+    margin: 0 12%;
+}
+
+.about-img img {
+   
+    float: right;
+}
+
+
+.about-img-2 img {
+   
+    float: left;
+}
+
+.team-icon ul li:hover .fa:nth-child(1) {
+    left: 25%;
+
+}
+
+.team-icon ul li .fa{
+    
+    
+    left: 25%;
+  
+}
+
+.send-msg a {
+   
+    font-size: 14px;
+    
+    padding: 17px 25px;
+}
+
+
+
+}
+
+/*for tablet*/
+
+@media (min-width: 576px) and (max-width:768px){
+
+
+.btn-hover a {
+    
+    right: 17%;
+}
+
+.service-icon ul li {
+   
+    margin: 0 -13%;
+}
+
+.service-icon h4 {
+   
+    font-size: 20px;
+}
+
+.team-icon ul li .fa{
+    
+    font-size: 18px;
+    left: 30%;
+  
+}
+
+.team-icon ul li {
+   
+    width: 40px;
+    height: 40px;
+  
+    margin: 0 5px;
+   
+}
+
+.team-icon ul {
+ 
+    padding: 0;
+}
+
+.send-msg a {
+   
+    right: 24%;
+}
+
+
+}
+
+/*for dextop*/
+
+@media (min-width: 768px) and (max-width:992px){
+
+.service-icon ul li {
+  
+    margin: 0 4%;
+}
+
+.btn-hover a {
+   
+    right: 28%;
+}
+
+
+
+.service-icon h4 {
+    
+    font-size: 20px;
+}
+
+.service-icon p {
+    
+    font-size: 15px;
+}
+
+
+.team-icon ul {
+ 
+    padding: 0;
+}
+
+
+
+.team-icon ul li .fa{
+    
+    font-size: 18px;
+    left: 30%;
+  
+}
+
+.team-icon ul li {
+   
+    width: 40px;
+    height: 40px;
+  
+    margin: 0 16px;
+   
+}
+
+
+.send-msg a {
+  
+    right: 31%;
+}
+
+
+
+
+
+
+}
+
+/*for large device*/
+
+@media (min-width: 992px) and (max-width:1200px){
+
+
+.team-icon ul li {
+   
+   
+  
+    margin: 0 20px;
+   
+}
+
+
+.team-icon ul {
+ 
+    padding: 0;
+}
+
+.send-msg a {
+
+    right: 35%;
+}
+
+
+
+}
